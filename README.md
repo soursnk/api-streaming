@@ -1,68 +1,47 @@
-# API STREAMING
+# 🎬 API Streaming
 
-**A aplicação permite:**
+API desenvolvida com **Node.js + Express + MongoDB (Mongoose)** com foco em modelagem de dados, boas práticas de consulta e uso de aggregation.
 
-Cadastro de usuários
-Cadastro de vídeos
-Histórico de visualização
-Sistema de avaliação
-Ranking de conteúdos mais assistidos
+---
 
-O foco do projeto é a modelagem de dados em MongoDB, boas práticas de consulta e uso de aggregation.
-Objetivo da Atividade: Desenvolver uma API em Node.js + Express + MongoDB (Mongoose) capaz de:
+## 👩‍💻 Alunas
+Nycolle Khetlem, Manuela Figueira, Katarine Meira, Samily Sena e Luana Magalhães
 
-Criar e listar usuários
-Criar e listar vídeos
-Registrar histórico de visualização
-Calcular estatísticas usando aggregation
-Implementar indexação adequada
-Requisitos Funcionais Usuários
+---
 
-**Cada usuário deve possuir:** 
-Nome
-Email
-Data de criação
-Lista de perfis (ex: infantil, adulto)
+## 📋 Sobre o Projeto
+A aplicação permite cadastro de usuários, cadastro de vídeos, histórico de visualização, sistema de avaliação e ranking de conteúdos mais assistidos.
 
-**Vídeos** 
-Cada vídeo deve possuir:
+---
 
-Título Categoria Duração (em minutos)
-Número de visualizações
-Nota média
-Data de cadastro
-Histórico de Visualização
+## ⚙️ Funcionalidades
 
-**Cada registro deve conter:** 
-ID do usuário 
-ID do vídeo 
-Data de visualização 
-Progresso (em %) 
-Avaliação (opcional, de 1 a 5)
+**Usuários:** nome, email, data de criação e lista de perfis (ex: infantil, adulto).
 
-Regras de Negócio Ao registrar uma visualização: O contador de visualizações do vídeo deve ser incrementado.
-Caso o usuário avalie o vídeo: A nota média deve ser recalculada.
+**Vídeos:** título, categoria, duração em minutos, número de visualizações, nota média e data de cadastro.
 
-**O sistema deve permitir:** 
-Listar os 10 vídeos mais assistidos. 
-Listar vídeos por categoria. 
-Buscar histórico de um usuário.
+**Histórico de Visualização:** ID do usuário, ID do vídeo, data de visualização, progresso em % e avaliação opcional de 1 a 5.
 
-**Requisitos Técnicos Obrigatórios O projeto deve conter:** 
-Uso de Mongoose 
+---
 
-**Uso de pelo menos:**
-$inc 
-$group 
-$sort 
-$lookup 
-Pelo menos 2 índices definidos manualmente 
-Uso de variáveis de ambiente para conexão com MongoDB 
-Estrutura organizada de pastas
+## 📐 Regras de Negócio
+Ao registrar uma visualização, o contador é incrementado automaticamente. Caso o usuário avalie o vídeo, a nota média é recalculada. O sistema permite listar os 10 vídeos mais assistidos, listar vídeos por categoria e buscar o histórico de um usuário.
 
-**ALUNAS:**
-Nycolle Khetlem
-Manuela Figueira
-Katarine Meira
-Samily Sena
-Luana Magalhães
+---
+
+## 🛠️ Tecnologias
+Node.js, Express, MongoDB, Mongoose, dotenv e Nodemon.
+
+---
+
+## 🚀 Como Rodar
+
+1. Clone o repositório e rode `npm install`
+2. Crie o `.env`
+3. Rode `npm run dev`
+
+---
+
+## ✅ Requisitos Técnicos
+Uso de Mongoose, operadores `$inc`, `$group`, `$sort` e `$lookup`, pelo menos 2 índices definidos manualmente, variáveis de ambiente e estrutura organizada de pastas.
+
